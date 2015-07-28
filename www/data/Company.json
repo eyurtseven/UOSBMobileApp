@@ -1,0 +1,98 @@
+[
+    {
+        "Company" : "106/3",
+        "Sector" : "",
+        "Address" : "",
+        "Phone" : ["",""],
+        "Fax" : ["",""],
+        "WebSite": "",
+        "Location": {
+            "Latitude" : "38.684947",
+            "Longitude" : "29.206581"
+        }
+    },
+    {
+        "Company" : "107/3",
+        "Sector" : "",
+        "Address" : "",
+        "Phone" : ["",""],
+        "Fax" : ["",""],
+        "WebSite": "",
+        "Location": {
+            "Latitude" : "38.675714",
+            "Longitude" : "29.203931"
+        }
+    },
+    {
+        "Company" : "107/17",
+        "Sector" : "",
+        "Address" : "",
+        "Phone" : ["",""],
+        "Fax" : ["",""],
+        "WebSite": "",
+        "Location": {
+            "Latitude" : "38.675700",
+            "Longitude" : "29.202878"
+        }
+    },
+    {
+        "Company" : "109/4",
+        "Sector" : "",
+        "Address" : "",
+        "Phone" : ["",""],
+        "Fax" : ["",""],
+        "WebSite": "",
+        "Location": {
+            "Latitude" : "38.679836",
+            "Longitude" : "29.205303"
+        }
+    },
+    {
+        "Company" : "110/7",
+        "Sector" : "",
+        "Address" : "",
+        "Phone" : ["",""],
+        "Fax" : ["",""],
+        "WebSite": "",
+        "Location": {
+            "Latitude" : "38.684947",
+            "Longitude" : "29.206581"
+        }
+    },
+    {
+        "Company" : "127/3",
+        "Sector" : "",
+        "Address" : "",
+        "Phone" : ["",""],
+        "Fax" : ["",""],
+        "WebSite": "",
+        "Location": {
+            "Latitude" : "38.675714",
+            "Longitude" : "29.203931"
+        }
+    },
+    {
+        "Company" : "126/5",
+        "Sector" : "",
+        "Address" : "",
+        "Phone" : ["",""],
+        "Fax" : ["",""],
+        "WebSite": "",
+        "Location": {
+            "Latitude" : "38.675700",
+            "Longitude" : "29.202878"
+        }
+    },
+    {
+        "Company" : "136/4",
+        "Sector" : "",
+        "Address" : "",
+        "Phone" : ["",""],
+        "Fax" : ["",""],
+        "WebSite": "",
+        "Location": {
+            "Latitude" : "38.679836",
+            "Longitude" : "29.205303"
+        }
+    }
+]

@@ -1,0 +1,9 @@
+<ion-view view-title="Companies">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="company in companies" href="#/app/playlists/{{company.id}}">
+        {{company.Company}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
