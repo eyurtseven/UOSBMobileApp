@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['ngSanitize'])
+angular.module('starter.controllers', [])
 
     .controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
 
@@ -61,21 +61,21 @@ angular.module('starter.controllers', ['ngSanitize'])
 
                 var itemText = item.Company + ' (' + item.Location.Latitude + ', ' + item.Location.Longitude + ')';
 
-                $scope.companies.push({Company: itemText, id: i + 1});
+                $scope.companies.push({Company: itemText, Id: item.Id});
             });
 
         });
 
     })
 
-    .controller('NewsCtrl', function ($scope, NewsService, $sce) {
+    .controller('NewsCtrl', function ($scope, NewsService) {
         $scope.news = [];
 
         NewsService.getNews().then(function (response) {
 
             angular.forEach(response.data, function (item, i) {
 
-                var itemText = $sce.trustAsHtml(item.title);
+                var itemText = item.title;
 
                 $scope.news.push({title: itemText, id: i + 1});
             });
@@ -83,6 +83,74 @@ angular.module('starter.controllers', ['ngSanitize'])
         });
 
     })
+    .controller('GoToCompanyCtrl', function ($scope, $stateParams, CompanyService, GlobalFunctionService) {
+        var companyId = $stateParams.companyId;
 
+        CompanyService.getCompanyData().then(function (response) {
+
+            var companies = response.data;
+
+            var selectedCompany = GlobalFunctionService.findById(companies, companyId);
+
+            $scope.myLocation = {
+                lng: "",
+                lat: ""
+            };
+
+            $scope.drawMap = function (position) {
+
+                $scope.$apply(function () {
+
+                    $scope.myLocation.lng = position.coords.longitude;
+                    $scope.myLocation.lat = position.coords.latitude;
+
+                    initialize();
+                });
+            }
+            navigator.geolocation.getCurrentPosition($scope.drawMap);
+            var directionsDisplay;
+            var directionsService = new google.maps.DirectionsService();
+            var map;
+
+            function initialize() {
+                directionsDisplay = new google.maps.DirectionsRenderer();
+                var inticor = new google.maps.LatLng($scope.myLocation.lat, $scope.myLocation.lng);
+
+                var mapOptions =
+                {
+                    zoom: 9,
+                    center: inticor,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                };
+
+                map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
+
+                directionsDisplay.setMap(map);
+                calcRoute();
+
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+            function calcRoute() {
+                var start = $scope.myLocation.lat + "," + $scope.myLocation.lng;
+                var end = selectedCompany.Location.Latitude + "," + selectedCompany.Location.Longitude;
+
+                var request = {
+                    origin: start,
+                    destination: end,
+                    travelMode: google.maps.TravelMode.DRIVING
+                };
+                directionsService.route(request, function (response, status) {
+                    if (status == google.maps.DirectionsStatus.OK) {
+                        directionsDisplay.setDirections(response);
+                    }
+                });
+            }
+
+        });
+
+    })
     .controller('PlaylistCtrl', function ($scope, $stateParams) {
+
     });
