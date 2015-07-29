@@ -86,8 +86,6 @@ angular.module('starter.controllers', [])
     .controller('GoToCompanyCtrl', function ($scope, $stateParams, CompanyService, GlobalFunctionService) {
         var companyId = $stateParams.companyId;
 
-        console.log(companyId);
-
         CompanyService.getCompanyData().then(function (response) {
 
             var companies = response.data;
@@ -109,7 +107,7 @@ angular.module('starter.controllers', [])
                     initialize();
                 });
             }
-            navigator.geolocation.getCurrentPosition($scope.drawMap);
+            navigator.geolocation.getCurrentPosition($scope.drawMap, function(){},{enableHighAccuracy: true});
             var directionsDisplay;
             var directionsService = new google.maps.DirectionsService();
             var map;
@@ -117,7 +115,7 @@ angular.module('starter.controllers', [])
             function initialize() {
                 directionsDisplay = new google.maps.DirectionsRenderer();
                 var inticor = new google.maps.LatLng($scope.myLocation.lat, $scope.myLocation.lng);
-                console.log(inticor);
+
                 var mapOptions =
                 {
                     zoom: 9,
