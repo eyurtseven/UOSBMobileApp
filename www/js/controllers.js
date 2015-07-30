@@ -153,4 +153,13 @@ angular.module('starter.controllers', [])
     })
     .controller('PlaylistCtrl', function ($scope, $stateParams) {
 
+    })
+    .controller('UnitsCtrl', function ($scope, $stateParams) {
+
+    })
+    .controller('AboutCtrl', function ($scope, $stateParams) {
+
+    })
+    .controller('ContactCtrl', function ($scope, $stateParams) {
+
     });
