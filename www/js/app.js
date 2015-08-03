@@ -99,12 +99,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
-            .state('app.units', {
-                url: '/units',
+            .state('app.directors', {
+                url: '/directors',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/units.html',
-                        controller: 'UnitsCtrl'
+                        templateUrl: 'templates/directors.html',
+                        controller: 'DirectorsCtrl'
                     }
                 }
             })
@@ -126,10 +126,19 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.chairman', {
+                url: '/chairman',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/chairman.html',
+                        controller: 'ChairmanCtrl'
+                    }
+                }
+            })
 
         ;
         // if none of the above states are matched, use this as the fallback
-        $urlRouterProvider.otherwise('/app/units');
+        $urlRouterProvider.otherwise('/app/directors');
     })
 
     .service('CompanyService', function ($http) {

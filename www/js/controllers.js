@@ -154,7 +154,7 @@ angular.module('starter.controllers', [])
     .controller('PlaylistCtrl', function ($scope, $stateParams) {
 
     })
-    .controller('UnitsCtrl', function ($scope, $stateParams) {
+    .controller('DirectorsCtrl', function ($scope, $stateParams) {
 
     })
     .controller('AboutCtrl', function ($scope, $stateParams) {
@@ -162,4 +162,8 @@ angular.module('starter.controllers', [])
     })
     .controller('ContactCtrl', function ($scope, $stateParams) {
 
-    });
+    })
+    .controller('ChairmanCtrl', function ($scope, $stateParams) {
+
+});
+
