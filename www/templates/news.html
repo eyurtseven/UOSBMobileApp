@@ -1,7 +1,7 @@
 <ion-view view-title="{{newsTitle}}">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="n in news" href="#/app/newsDetail/{{n.id}}" >
+      <ion-item menu-close ng-repeat="n in news" href="#/app/newsDetail/{{n.id}}" >
             <img style="width: 50%; height: 50%;" src="{{n.image}}" />
             <br>
             <span ng-bind-html="n.title"></span>

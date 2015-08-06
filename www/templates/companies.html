@@ -1,7 +1,7 @@
 <ion-view view-title="Companies">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="company in companies" href="#/app/goToCompany/{{company.Id}}">
+      <ion-item menu-close ng-repeat="company in companies" href="#/app/goToCompany/{{company.Id}}">
         {{company.Company}}
       </ion-item>
     </ion-list>
