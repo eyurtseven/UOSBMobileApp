@@ -90,6 +90,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             })
 
+            .state('app.newsDetail', {
+                url: '/newsDetail/:newsId',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/newsDetail.html',
+                        controller: 'NewsDetailCtrl'
+                    }
+                }
+            })
+
             .state('app.goToCompany', {
                 url: '/goToCompany/:companyId',
                 views: {

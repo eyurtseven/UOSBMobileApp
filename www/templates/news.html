@@ -1,8 +1,10 @@
-<ion-view view-title="News">
+<ion-view view-title="{{newsTitle}}">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="n in news" href="#/app/news/{{n.id}}" >
-        <span ng-bind-html="n.title"></span>
+      <ion-item ng-repeat="n in news" href="#/app/newsDetail/{{n.id}}" >
+            <img style="width: 50%; height: 50%;" src="{{n.image}}" />
+            <br>
+            <span ng-bind-html="n.title"></span>
       </ion-item>
     </ion-list>
   </ion-content>

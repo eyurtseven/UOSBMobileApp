@@ -75,14 +75,37 @@ angular.module('starter.controllers', [])
 
             angular.forEach(response.data, function (item, i) {
 
-                var itemText = item.title;
+                if(item.status == "publish") {
 
-                $scope.news.push({title: itemText, id: i + 1});
+                    var itemText = item.title;
+                    $scope.news.push({title: itemText, image: item.featured_image.source, id: item.ID});
+
+                }
             });
 
         });
 
     })
+
+    .controller('NewsDetailCtrl', function ($scope, $stateParams, NewsService) {
+
+        NewsService.getNews().then(function (response) {
+
+            angular.forEach(response.data, function (item, i) {
+
+                if(item.ID == $stateParams.newsId) {
+
+                    $scope.newsId = item.Id;
+                    $scope.newsImage = item.featured_image.source;
+                    $scope.newsTitle = item.title;
+
+                }
+            });
+
+        });
+
+    })
+
     .controller('GoToCompanyCtrl', function ($scope, $stateParams, CompanyService, GlobalFunctionService) {
         var companyId = $stateParams.companyId;
 
