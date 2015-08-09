@@ -2,8 +2,28 @@
   <ion-content>
     <ion-list>
       <ion-item menu-close ng-repeat="company in companies" href="#/app/goToCompany/{{company.Id}}">
-        {{company.Company}}
+              {{company.Company}}
       </ion-item>
+      <div class="list companies">
+        <div class="item item-button-right">
+          Firma Adı
+          <button class="button button-positive">
+            <i class="icon ion-navigate"> Yol Tarifi</i>
+          </button>
+        </div>
+        <div class="item item-button-right">
+          Firma Adı
+          <button class="button button-positive">
+            <i class="icon ion-navigate"> Yol Tarifi</i>
+          </button>
+        </div>
+        <div class="item item-button-right">
+          Firma Adı
+          <button class="button button-positive">
+            <i class="icon ion-navigate"> Yol Tarifi</i>
+          </button>
+        </div>
+      </div>
     </ion-list>
   </ion-content>
 </ion-view>

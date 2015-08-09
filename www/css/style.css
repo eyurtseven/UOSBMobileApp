@@ -1,34 +1,75 @@
+@charset "UTF-8";
+/* Y├Ânetim Kurulu */
 .author-info {
-    font-size: 13px;
-    margin-bottom: 28px;
-    overflow: hidden;
-}
+  font-size: 13px;
+  margin-bottom: 28px;
+  overflow: hidden; }
+
 .author-info .avatar {
-    float: left;
-}
+  float: left; }
+
 .author-info [rel="author"] {
-    color: #19232d;
-    text-transform: uppercase;
-}
-.author-info .social-icons {
-    float: right;
-}
-.author-info .social-icons li {
-    margin-right: 10px;
-}
-.author-info .social-icons li a {
-    background: #fff none repeat scroll 0 0;
-    color: #606569;
-    font-size: 14px;
-}
-.author-info .social-icons li a:hover {
-    color: #19232d;
-}
+  color: #19232d;
+  text-transform: uppercase; }
+
 .author-info .description {
-    line-height: 1.714;
-    margin-left: 135px;
-}
+  line-height: 1.714;
+  margin-left: 110px; }
 .author-info .bio {
-    margin-bottom: 0;
-    margin-top: 14px;
-}
+  margin-bottom: 0;
+  margin-top: 14px; }
+.author-info .social-icons {
+  float: left; }
+  .author-info .social-icons .icons {
+    width: 20px; }
+  .author-info .social-icons li {
+    margin-right: 10px;
+    display: inline; }
+    .author-info .social-icons li a {
+      background: #fff none repeat scroll 0 0;
+      color: #606569;
+      font-size: 14px;
+      text-decoration: none; }
+    .author-info .social-icons li a:hover {
+      color: #19232d; }
+
+/* Contact */
+.contact {
+  line-height: 30px;
+  margin-top: 10px; }
+  .contact h2 {
+    font-size: 18px;
+    font-weight: 600; }
+
+/* About */
+.about p {
+  line-height: 30px; }
+
+/* Companies */
+.companies .companies-detail {
+  padding: 5px; }
+  .companies .companies-detail i {
+    font-size: 12px;
+    color: #ffffff;
+    font-style: italic;
+    background-color: #b3996b;
+    padding: 4px 8px; }
+  .companies .companies-detail h2 {
+    line-height: 30px; }
+
+/* News */
+.news .news-img {
+  width: 100%;
+  height: 120px; }
+  .news .news-img img {
+    width: 80%; }
+.news .news-title {
+  background-color: #8A6C3A;
+  color: #FFFFFF;
+  margin-left: 10px;
+  padding: 4px 8px;
+  text-transform: uppercase; }
+
+/* chairman */
+
+/*# sourceMappingURL=style.css.map */
