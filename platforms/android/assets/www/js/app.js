@@ -8,6 +8,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
+
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if (window.cordova && window.cordova.plugins.Keyboard) {
@@ -98,10 +99,46 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.directors', {
+                url: '/directors',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/directors.html',
+                        controller: 'DirectorsCtrl'
+                    }
+                }
+            })
+            .state('app.about', {
+                url: '/about',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/about.html',
+                        controller: 'AboutCtrl'
+                    }
+                }
+            })
+            .state('app.contact', {
+                url: '/contact',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/contact.html',
+                        controller: 'ContactCtrl'
+                    }
+                }
+            })
+            .state('app.chairman', {
+                url: '/chairman',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/chairman.html',
+                        controller: 'ChairmanCtrl'
+                    }
+                }
+            })
 
         ;
         // if none of the above states are matched, use this as the fallback
-        $urlRouterProvider.otherwise('/app/companies');
+        $urlRouterProvider.otherwise('/app/directors');
     })
 
     .service('CompanyService', function ($http) {
