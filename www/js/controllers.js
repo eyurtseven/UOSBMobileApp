@@ -75,7 +75,7 @@ angular.module('starter.controllers', [])
 
             angular.forEach(response.data, function (item, i) {
 
-                if(item.status == "publish") {
+                if (item.status == "publish") {
 
                     var itemText = item.title;
                     $scope.news.push({title: itemText, image: item.featured_image.source, id: item.ID});
@@ -93,7 +93,7 @@ angular.module('starter.controllers', [])
 
             angular.forEach(response.data, function (item, i) {
 
-                if(item.ID == $stateParams.newsId) {
+                if (item.ID == $stateParams.newsId) {
 
                     $scope.newsId = item.Id;
                     $scope.newsImage = item.featured_image.source;
@@ -115,8 +115,6 @@ angular.module('starter.controllers', [])
 
             var selectedCompany = GlobalFunctionService.findById(companies, companyId);
 
-            console.log(selectedCompany);
-
             $scope.selectedCompany = selectedCompany;
 
             $scope.myLocation = {
@@ -134,7 +132,8 @@ angular.module('starter.controllers', [])
                     initialize();
                 });
             }
-            navigator.geolocation.getCurrentPosition($scope.drawMap, function(){},{enableHighAccuracy: true});
+            navigator.geolocation.getCurrentPosition($scope.drawMap, function () {
+            }, {enableHighAccuracy: true});
             var directionsDisplay;
             var directionsService = new google.maps.DirectionsService();
             var map;
@@ -187,10 +186,45 @@ angular.module('starter.controllers', [])
     .controller('AboutCtrl', function ($scope, $stateParams) {
 
     })
-    .controller('ContactCtrl', function ($scope, $stateParams) {
+    .controller('ContactCtrl', function ($scope) {
+//38.678125, 29.220334
+        google.maps.event.addDomListener(window, 'load', function () {
+
+
+            var myLatlng = new google.maps.LatLng(38.678125, 29.220334);
+
+            var mapOptions = {
+                center: myLatlng,
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+            var myLocation = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: "Uşak Organize Sanayi Bölgesi"
+            });
+
+//            var infowindow = new google.maps.InfoWindow({
+//
+//            });
+//
+//
+//            google.maps.event.addListener(myLocation, 'click', function() {
+//                infowindow.open(map, myLocation);
+//            });
+
+
+            map.setCenter(myLatlng);
+
+
+            $scope.map = map;
+        });
 
     })
     .controller('ChairmanCtrl', function ($scope, $stateParams) {
 
-});
+    });
 
