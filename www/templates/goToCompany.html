@@ -1,17 +1,22 @@
-<ion-view view-title="Yol Tarifi">
+<ion-view view-title="" cache-view="false">
+
     <ion-content data-tap-disabled="true">
         <div id="googleMap" name="googleMap" style="width: 100%; min-height: 70%"></div>
         <div class="companies">
             <div class="list card">
                 <h2>{{selectedCompany.Company}}</h2>
-                <div class="item item-icon-left"><i class="icon ion-ios-location"></i> Firma koordinat bilgileri</div>
 
-                <div class="item item-icon-left"><i class="icon ion-home"></i>{{selectedCompany.Address}}</div>
+                <div class="item item-icon-left"><i class="icon ion-ios-location"></i> {{selectedCompany.Location.Latitude}}, {{selectedCompany.Location.Longitude}}</div>
 
-                <div class="item item-icon-left"><i class="icon ion-ios-telephone"></i> <p ng-repeat="p in selectedCompany.Phone">
-                    {{p}}
-                </p></div>
+                <div class="item item-icon-left"><i class="icon ion-home"></i> {{selectedCompany.Address}}</div>
+
+                <div class="item item-icon-left"><i class="icon ion-ios-telephone"></i>
+
+                    <p ng-repeat="p in selectedCompany.Phone track by $index">
+                        {{p}}
+                    </p></div>
             </div>
         </div>
     </ion-content>
+
 </ion-view>

@@ -207,16 +207,6 @@ angular.module('starter.controllers', [])
                 title: "Uşak Organize Sanayi Bölgesi"
             });
 
-//            var infowindow = new google.maps.InfoWindow({
-//
-//            });
-//
-//
-//            google.maps.event.addListener(myLocation, 'click', function() {
-//                infowindow.open(map, myLocation);
-//            });
-
-
             map.setCenter(myLatlng);
 
 
