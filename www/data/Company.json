@@ -16,8 +16,8 @@
         "Id": "2",
         "Company": "107/3",
         "Sector": "",
-        "Address": "",
-        "Phone": ["", ""],
+        "Address": "Uşak Organize Sanayi Bölgesi Ada 1 Parsel 13",
+        "Phone": ["0 276 266 84 11", "0 276 266 84 12"],
         "Fax": ["", ""],
         "WebSite": "",
         "Location": {

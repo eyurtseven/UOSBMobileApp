@@ -115,6 +115,10 @@ angular.module('starter.controllers', [])
 
             var selectedCompany = GlobalFunctionService.findById(companies, companyId);
 
+            console.log(selectedCompany);
+
+            $scope.selectedCompany = selectedCompany;
+
             $scope.myLocation = {
                 lng: "",
                 lat: ""
