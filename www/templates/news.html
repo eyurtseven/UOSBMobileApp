@@ -2,11 +2,13 @@
   <ion-content>
     <ion-list>
       <ion-item menu-close ng-repeat="n in news" href="#/app/newsDetail/{{n.id}}" >
-            <div class="news">
-                <div class="news-img"><img alt="Uşak Organize Sanayi Haberler" src="{{n.image}}" />
-                </div>
-            <span class="news-title" ng-bind-html="n.title"></span>
-            </div>
+          <div class="list news">
+              <div class="item item-thumbnail-left">
+                  <img  alt="Uşak Organize Sanayi Haberler" src="{{n.image}}">
+                  <h2 ng-bind-html="n.title"></h2>
+                  <p>Uşak Organize Sanayi Haber ve Duyuruları</p>
+              </div>
+          </div>
       </ion-item>
     </ion-list>
   </ion-content>

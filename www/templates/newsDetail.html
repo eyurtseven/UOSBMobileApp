@@ -1,9 +1,13 @@
 <ion-view view-title="">
   <ion-content>
       <ion-item>
-          <span ng-bind="newsTitle"></span>
-          <br>
-          <img style="width: 50%; height: 50%;" src="{{newsImage}}" />
+          <div class="list">
+              <a class="item item-thumbnail-left" href="#">
+                  <img src="{{newsImage}}">
+                  <h2 ng-bind="newsTitle"></h2>
+                  <p>Uþak Organize Sanayi Haber ve Duyurularý</p>
+              </a>
+          </div>
       </ion-item>
   </ion-content>
 </ion-view>
