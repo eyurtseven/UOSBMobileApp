@@ -187,18 +187,17 @@ angular.module('starter.controllers', [])
 
     })
     .controller('ContactCtrl', function ($scope, $ionicLoading, $compile) {
+
+
         function initialize() {
-            var myLatlng = new google.maps.LatLng(38.678125, 29.220334);
-
+            var myLatLng = new google.maps.LatLng(38.677179, 29.220291);
+            var mapCanvas = document.getElementById('map');
             var mapOptions = {
-                center: myLatlng,
-                zoom: 16,
+                center: myLatLng,
+                zoom: 15,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(document.getElementById("map"),
-                mapOptions);
-
-            //Marker + infowindow + angularjs compiled ng-click
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions)
             var contentString = "<div><a>Uşak Organize Sanayi Bölgesi</a></div>";
             var compiled = $compile(contentString)($scope);
 
@@ -207,20 +206,15 @@ angular.module('starter.controllers', [])
             });
 
             var marker = new google.maps.Marker({
-                position: myLatlng,
+                position: myLatLng,
                 map: map,
                 title: 'Uluru (Ayers Rock)'
-            });
-
-            google.maps.event.addListener(marker, 'click', function() {
-                infowindow.open(map,marker);
             });
 
             $scope.map = map;
         }
         google.maps.event.addDomListener(window, 'load', initialize);
 
-    //38.678125, 29.220334
     })
     .controller('ChairmanCtrl', function ($scope, $stateParams) {
 
