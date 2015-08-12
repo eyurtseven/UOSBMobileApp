@@ -68,7 +68,12 @@ angular.module('starter.controllers', [])
 
     })
 
-    .controller('NewsCtrl', function ($scope, NewsService) {
+    .controller('NewsCtrl', function ($scope, NewsService, $ionicLoading) {
+
+        $ionicLoading.show({
+            template: 'Yükleniyor...'
+        });
+
         $scope.news = [];
 
         NewsService.getNews().then(function (response) {
@@ -79,7 +84,7 @@ angular.module('starter.controllers', [])
 
                     var itemText = item.title;
                     $scope.news.push({title: itemText, image: item.featured_image.source, id: item.ID});
-
+                    $ionicLoading.hide();
                 }
             });
 
@@ -87,7 +92,12 @@ angular.module('starter.controllers', [])
 
     })
 
-    .controller('NewsDetailCtrl', function ($scope, $stateParams, NewsService) {
+    .controller('NewsDetailCtrl', function ($scope, $stateParams, NewsService, $ionicLoading) {
+
+        $ionicLoading.show({
+            template: 'Yükleniyor...'
+        });
+
 
         NewsService.getNews().then(function (response) {
 
@@ -98,6 +108,7 @@ angular.module('starter.controllers', [])
                     $scope.newsId = item.Id;
                     $scope.newsImage = item.featured_image.source;
                     $scope.newsTitle = item.title;
+                    $ionicLoading.hide();
 
                 }
             });
@@ -106,7 +117,11 @@ angular.module('starter.controllers', [])
 
     })
 
-    .controller('GoToCompanyCtrl', function ($scope, $stateParams, CompanyService, GlobalFunctionService) {
+    .controller('GoToCompanyCtrl', function ($scope, $stateParams, CompanyService, GlobalFunctionService, $ionicLoading) {
+        $ionicLoading.show({
+            template: 'Yükleniyor...'
+        });
+
         var companyId = $stateParams.companyId;
 
         CompanyService.getCompanyData().then(function (response) {
@@ -175,6 +190,7 @@ angular.module('starter.controllers', [])
             }
 
         });
+        $ionicLoading.hide();
 
     })
     .controller('PlaylistCtrl', function ($scope, $stateParams) {
@@ -213,7 +229,8 @@ angular.module('starter.controllers', [])
 
             $scope.map = map;
         }
-        google.maps.event.addDomListener(window, 'load', initialize);
+        initialize();
+//        google.maps.event.addDomListener(window, 'load', initialize);
 
     })
     .controller('ChairmanCtrl', function ($scope, $stateParams) {
