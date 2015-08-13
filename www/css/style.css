@@ -58,6 +58,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 4px 8px;
   text-transform: uppercase; }
 
+.news-detail h2 {
+  margin: 5px 0 10px 0;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px; }
+.news-detail p {
+  text-align: center; }
+.news-detail .item-text-wrap img {
+  width: 50%;
+  height: 50%;
+  margin: 10px 0; }
+
 /* chairman */
 .chairman {
   padding: 10px; }
