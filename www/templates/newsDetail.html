@@ -2,11 +2,11 @@
   <ion-content>
       <ion-item>
           <div class="list">
-              <a class="item item-thumbnail-left" href="#">
+              <div class="item item-thumbnail-left">
                   <img src="{{newsImage}}">
                   <h2 ng-bind="newsTitle"></h2>
-                  <p>Uþak Organize Sanayi Haber ve Duyurularý</p>
-              </a>
+                  <span ng-bind-html="content"></span>
+              </div>
           </div>
       </ion-item>
   </ion-content>

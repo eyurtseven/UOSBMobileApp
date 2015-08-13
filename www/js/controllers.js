@@ -105,8 +105,11 @@ angular.module('starter.controllers', [])
 
                 if (item.ID == $stateParams.newsId) {
 
+                    console.log(item);
+
                     $scope.newsId = item.Id;
                     $scope.newsImage = item.featured_image.source;
+                    $scope.content = item.content;
                     $scope.newsTitle = item.title;
                     $ionicLoading.hide();
 
