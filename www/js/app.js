@@ -148,7 +148,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
         ;
         // if none of the above states are matched, use this as the fallback
-        $urlRouterProvider.otherwise('/app/directors');
+        $urlRouterProvider.otherwise('/app/news');
     })
 
     .service('CompanyService', function ($http) {
