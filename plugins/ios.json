@@ -23,6 +23,10 @@
                         {
                             "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -32,6 +36,12 @@
                     "CoreGraphics.framework": [
                         {
                             "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": true,
                             "count": 1
                         }
                     ]
@@ -54,6 +64,9 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.ionicframework.uosbmobileapp688988"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "com.uosb.mobile"
         }
     },
     "dependent_plugins": {}
