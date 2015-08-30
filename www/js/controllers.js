@@ -38,6 +38,7 @@ angular.module('starter.controllers', [])
                 $scope.closeLogin();
             }, 1000);
         };
+        $scope.menuLogo = "img/icon.png";
     })
 
     .controller('PlaylistsCtrl', function ($scope) {
