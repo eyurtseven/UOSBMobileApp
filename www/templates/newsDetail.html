@@ -4,7 +4,7 @@
           <div class="list">
               <div class="news-detail">
                   <img width="100%" src="{{newsImage}}">
-                  <h2 ng-bind="newsTitle"></h2>
+                  <h2 ng-bind-html="newsTitle"></h2>
                   <div class="item-text-wrap" ng-bind-html="content"></div>
               </div>
           </div>

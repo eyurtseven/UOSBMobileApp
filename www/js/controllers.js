@@ -58,7 +58,7 @@ angular.module('starter.controllers', [])
 
             angular.forEach(response.data, function (item, i) {
 
-                var itemText = item.Company + ' (' + item.Location.Latitude + ', ' + item.Location.Longitude + ')';
+                var itemText = item.Company;// + ' (' + item.Location.Latitude + ', ' + item.Location.Longitude + ')';
 
                 $scope.companies.push({Company: itemText, Id: item.Id});
             });
@@ -73,15 +73,16 @@ angular.module('starter.controllers', [])
         $ionicPlatform.ready(function() {
 
             if(window.Connection) {
+
                 if (navigator.connection.type == Connection.NONE) {
                     $ionicPopup.alert({
                         title: "İnternet Bağlantı Hatası",
                         content: "İnternet erişiminizi kontrol ediniz."
                     }).then(function (result) {
-                        $state.go('app.contact');
+                        $state.go('app.chairman');
                         return;
                     });
-                } else{
+                }else {
                     $ionicLoading.show({
                         template: 'Yükleniyor...'
                     });
@@ -94,8 +95,10 @@ angular.module('starter.controllers', [])
 
                             if (item.status == "publish") {
 
+                                console.log(item);
+
                                 var itemText = item.title;
-                                $scope.news.push({title: itemText, image: item.featured_image.source, id: item.ID});
+                                $scope.news.push({title: itemText, image: item.featured_image != null ?item.featured_image.source:'../img/white.png', id: item.ID});
                                 $ionicLoading.hide();
                             }
                         });
@@ -103,9 +106,7 @@ angular.module('starter.controllers', [])
                     });
                 }
             }
-
         });
-
     })
 
     .controller('NewsDetailCtrl', function ($scope, $stateParams, NewsService, $ionicLoading, $ionicHistory, $ionicPlatform, $ionicPopup) {
@@ -120,10 +121,10 @@ angular.module('starter.controllers', [])
                         title: "İnternet Bağlantı Hatası",
                         content: "İnternet erişiminizi kontrol ediniz."
                     }).then(function (result) {
-                        $state.go('app.contact');
+                        $state.go('app.chairman');
                         return;
                     });
-                } else{
+                }else  {
                     $ionicLoading.show({
                         template: 'Yükleniyor...'
                     });
@@ -135,7 +136,7 @@ angular.module('starter.controllers', [])
                             if (item.ID == $stateParams.newsId) {
 
                                 $scope.newsId = item.Id;
-                                $scope.newsImage = item.featured_image.source;
+                                $scope.newsImage = item.featured_image != null ?item.featured_image.source:'../img/white.png';
                                 $scope.content = item.content;
                                 $scope.newsTitle = item.title;
                                 $ionicLoading.hide();
@@ -149,6 +150,7 @@ angular.module('starter.controllers', [])
     })
 
     .controller('GoToCompanyCtrl', function ($scope, $stateParams, CompanyService, GlobalFunctionService, $ionicLoading, $ionicHistory, $ionicPlatform, $ionicPopup) {
+        $ionicHistory.currentView($ionicHistory.backView());
 
         $ionicPlatform.ready(function() {
 
@@ -158,10 +160,10 @@ angular.module('starter.controllers', [])
                         title: "İnternet Bağlantı Hatası",
                         content: "İnternet erişiminizi kontrol ediniz."
                     }).then(function (result) {
-                        $state.go('app.contact');
                         return;
                     });
-                } else{
+                    $state.go('app.chairman');
+                }else {
                     $ionicLoading.show({
                         template: 'Yükleniyor...'
                     });
@@ -260,10 +262,10 @@ angular.module('starter.controllers', [])
                         title: "İnternet Bağlantı Hatası",
                         content: "İnternet erişiminizi kontrol ediniz."
                     }).then(function (result) {
-                        $state.go('app.contact');
+                        $state.go('app.chairman');
                         return;
                     });
-                } else{
+                }else{
                     function initialize() {
                         var myLatLng = new google.maps.LatLng(38.677179, 29.220291);
                         var mapCanvas = document.getElementById('map');
