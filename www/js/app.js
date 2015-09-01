@@ -159,9 +159,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
     })
 
-    .service('NewsService', function ($http) {
+    .service('NewsService', function ($http, appCache) {
         this.getNews = function () {
-            return $http({method: 'GET', url: 'http://www.uosb.org.tr/wp-json/posts'});
+            var news = appCache.get('news');
+
+            if(news) {
+                return news;
+            }
+
+            var newsJson =  $http({method: 'GET', url: 'http://www.uosb.org.tr/wp-json/posts'});
+            appCache.put('news', newsJson);
+            return newsJson;
         }
     })
 
@@ -173,5 +181,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         }
-    })
+    }).factory('appCache', function($cacheFactory) {
+    return $cacheFactory('appData');
+});
 ;
