@@ -14,28 +14,33 @@
 
     <ion-side-menu side="left">
         <ion-header-bar class="bar-stable">
-            <h1 class="title">Left</h1>
+            <h1 class="title"></h1>
         </ion-header-bar>
         <ion-content>
+            <div class="col col-center">
+                <img ng-src="{{menuLogo}}" alt="Uşak Organize Sanayi" />
+            </div>
             <ion-list>
-                <ion-item menu-close ng-click="login()">
-                    Login
+
+                <ion-item menu-close  menu-chairman href="#/app/chairman">
+                    <i class="ion-person"></i> Başkandan
                 </ion-item>
-                <ion-item menu-close href="#/app/search">
-                    Search
+                <ion-item menu-close  menu-news href="#/app/news">
+                    <i class="ion-speakerphone"></i> Haberler
                 </ion-item>
-                <ion-item menu-close href="#/app/browse">
-                    Browse
+                <ion-item menu-close  menu-companies href="#/app/companies">
+                    <i class="ion-android-home"></i> Firmalar
                 </ion-item>
-                <ion-item menu-close href="#/app/playlists">
-                    Playlists
+                <ion-item menu-close  menu-directors href="#/app/directors">
+                    <i class="ion-briefcase"></i> Yönetim Kurulu
                 </ion-item>
-                <ion-item menu-close href="#/app/news">
-                    Haberler
+                <ion-item menu-close  menu-about href="#/app/about">
+                    <i class="ion-ios-people"></i> Hakkımızda
                 </ion-item>
-                <ion-item menu-close href="#/app/companies">
-                    Firmalar
+                <ion-item menu-close  menu-contact href="#/app/contact">
+                    <i class="ion-at"></i> İletişim
                 </ion-item>
+
             </ion-list>
         </ion-content>
     </ion-side-menu>
