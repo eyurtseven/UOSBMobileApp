@@ -151,6 +151,15 @@ angular.module('starter.controllers', [])
     .controller('DirectorsCtrl', function ($scope, $stateParams) {
 
     })
+    .controller('UnitsCtrl', function ($scope, $stateParams) {
+
+    })
+    .controller('UnitsElectricCtrl', function ($scope, $stateParams) {
+
+    })
+    .controller('UnitsItCtrl', function ($scope, $stateParams) {
+
+    })
     .controller('AboutCtrl', function ($scope, $stateParams) {
 
     })
