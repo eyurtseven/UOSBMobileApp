@@ -21,15 +21,15 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
                         {
                             "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -37,6 +37,12 @@
             },
             "framework": {
                 "parents": {
+                    "CoreLocation.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
                     "CoreGraphics.framework": [
                         {
                             "xml": false,
@@ -46,12 +52,6 @@
                     "SystemConfiguration.framework": [
                         {
                             "xml": true,
-                            "count": 1
-                        }
-                    ],
-                    "CoreLocation.framework": [
-                        {
-                            "xml": false,
                             "count": 1
                         }
                     ]
@@ -71,24 +71,24 @@
     },
     "installed_plugins": {
         "com.ionic.keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.uosbmobileapp688988"
+            "PACKAGE_NAME": "com.uosb.mobile"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.uosbmobileapp688988"
+            "PACKAGE_NAME": "com.uosb.mobile"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.uosbmobileapp688988"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.uosbmobileapp688988"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.uosbmobileapp688988"
-        },
-        "org.apache.cordova.network-information": {
             "PACKAGE_NAME": "com.uosb.mobile"
         },
         "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.uosb.mobile"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.uosb.mobile"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.uosb.mobile"
+        },
+        "org.apache.cordova.network-information": {
             "PACKAGE_NAME": "com.uosb.mobile"
         }
     },
