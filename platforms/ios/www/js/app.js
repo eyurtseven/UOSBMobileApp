@@ -8,6 +8,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
+
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if (window.cordova && window.cordova.plugins.Keyboard) {
@@ -89,6 +90,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             })
 
+            .state('app.newsDetail', {
+                url: '/newsDetail/:newsId',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/newsDetail.html',
+                        controller: 'NewsDetailCtrl'
+                    }
+                }
+            })
+
             .state('app.goToCompany', {
                 url: '/goToCompany/:companyId',
                 views: {
@@ -98,10 +109,73 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.directors', {
+                url: '/directors',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/directors.html',
+                        controller: 'DirectorsCtrl'
+                    }
+                }
+            })
+            .state('app.units', {
+                url: '/units',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/units.html',
+                        controller: 'UnitsCtrl'
+                    }
+                }
+            })
+            .state('app.unitsElectric', {
+                url: '/unitsElectric',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/unitsElectric.html',
+                        controller: 'UnitsElectricCtrl'
+                    }
+                }
+            })
+            .state('app.unitsIt', {
+                url: '/unitsIt',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/unitsIt.html',
+                        controller: 'UnitsItCtrl'
+                    }
+                }
+            })
+            .state('app.about', {
+                url: '/about',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/about.html',
+                        controller: 'AboutCtrl'
+                    }
+                }
+            })
+            .state('app.contact', {
+                url: '/contact',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/contact.html',
+                        controller: 'ContactCtrl'
+                    }
+                }
+            })
+            .state('app.chairman', {
+                url: '/chairman',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/chairman.html',
+                        controller: 'ChairmanCtrl'
+                    }
+                }
+            })
 
         ;
         // if none of the above states are matched, use this as the fallback
-        $urlRouterProvider.otherwise('/app/companies');
+        $urlRouterProvider.otherwise('/app/news');
     })
 
     .service('CompanyService', function ($http) {
@@ -112,9 +186,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
     })
 
-    .service('NewsService', function ($http) {
+    .service('NewsService', function ($http, appCache) {
         this.getNews = function () {
-            return $http({method: 'GET', url: 'http://www.uosb.org.tr/wp-json/posts'});
+            var news = appCache.get('news');
+
+            if(news) {
+                return news;
+            }
+
+            var newsJson =  $http({method: 'GET', url: 'http://www.uosb.org.tr/wp-json/posts'});
+            appCache.put('news', newsJson);
+            return newsJson;
         }
     })
 
@@ -126,5 +208,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         }
-    })
+    }).factory('appCache', function($cacheFactory) {
+    return $cacheFactory('appData');
+});
 ;
