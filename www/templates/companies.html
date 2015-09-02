@@ -2,10 +2,11 @@
     <ion-content>
         <ion-list>
             <ion-item menu-close ng-repeat="company in companies">
-                <div class="item">
-                    <a class="button button-stable" href="#/app/goToCompany/{{company.Id}}">
+                <div class="company">
+                    <ul><li><a href="#/app/goToCompany/{{company.Id}}">
                          {{company.Company}}
-                    </a>
+                    </a></li>
+                    </ul>
                 </div>
             </ion-item>
         </ion-list>
