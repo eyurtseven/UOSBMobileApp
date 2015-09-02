@@ -85,7 +85,7 @@ module.exports.metadata =
     "com.ionic.keyboard": "1.0.4",
     "cordova-plugin-console": "1.0.1",
     "cordova-plugin-device": "1.0.1",
-    "cordova-plugin-geolocation": "1.0.1",
+    "cordova-plugin-geolocation": "1.0.2-dev",
     "cordova-plugin-splashscreen": "2.1.0",
     "cordova-plugin-whitelist": "1.0.0",
     "org.apache.cordova.network-information": "0.2.15"
