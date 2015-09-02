@@ -149,7 +149,13 @@ angular.module('starter.controllers', [])
         });
     })
     .controller('DirectorsCtrl', function ($scope, $stateParams) {
-
+        $scope.directorPics = {
+          ali_yildirim: 'img/ali-yildirim.jpg',
+          fahri_polat: 'img/fahri-polat.jpg',
+          mehmet_kavak: 'img/mehmet-kavak.jpg',
+          mehmet_sesli: 'img/mehmet-sesli.jpg',
+          suha_ucar: 'img/suha-ucar.jpg'
+        };
     })
     .controller('UnitsCtrl', function ($scope, $stateParams) {
 
