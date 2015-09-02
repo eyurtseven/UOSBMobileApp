@@ -203,5 +203,5 @@ angular.module('starter.controllers', [])
         });
     })
     .controller('ChairmanCtrl', function ($scope, $stateParams) {
-
+        $scope.chairmanPic = 'img/baskandan.jpg';
     });
