@@ -1,34 +1,77 @@
-.author-info {
-    font-size: 13px;
-    margin-bottom: 28px;
-    overflow: hidden;
-}
-.author-info .avatar {
-    float: left;
-}
-.author-info [rel="author"] {
-    color: #19232d;
-    text-transform: uppercase;
-}
-.author-info .social-icons {
-    float: right;
-}
-.author-info .social-icons li {
+body {
+  color: #606060; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #505050; }
+
+/* Directors */
+.directors .social-icons {
+  float: left; }
+  .directors .social-icons .icons {
+    width: 20px; }
+  .directors .social-icons li {
     margin-right: 10px;
-}
-.author-info .social-icons li a {
-    background: #fff none repeat scroll 0 0;
     color: #606569;
-    font-size: 14px;
-}
-.author-info .social-icons li a:hover {
-    color: #19232d;
-}
-.author-info .description {
-    line-height: 1.714;
-    margin-left: 135px;
-}
-.author-info .bio {
-    margin-bottom: 0;
-    margin-top: 14px;
-}
+    font-size: 14px; }
+    .directors .social-icons li a {
+      background: #fff none repeat scroll 0 0;
+      color: #606569;
+      font-size: 14px;
+      text-decoration: none; }
+    .directors .social-icons li a:hover {
+      color: #19232d; }
+
+/* Contact */
+.contact {
+  line-height: 30px;
+  margin-top: 10px; }
+  .contact h2 {
+    font-size: 18px;
+    font-weight: 600; }
+
+/* About */
+.about {
+  padding: 10px;
+  text-align: justify; }
+  .about p {
+    line-height: 30px; }
+
+/* Companies */
+.companies h2 {
+  line-height: 30px;
+  margin: 5px 0 5px 10px;
+  font-size: 24px; }
+
+.scroll {
+  height: 100%; }
+
+/* News */
+.news .news-img {
+  width: 100%;
+  height: 120px; }
+  .news .news-img img {
+    width: 80%; }
+.news .news-title {
+  background-color: #8A6C3A;
+  color: #FFFFFF;
+  margin-left: 10px;
+  padding: 4px 8px;
+  text-transform: uppercase; }
+
+.news-detail h2 {
+  margin: 5px 0 10px 0;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px; }
+.news-detail p {
+  text-align: center; }
+.news-detail .item-text-wrap img {
+  width: 50%;
+  height: 50%;
+  margin: 10px 0; }
+
+/* chairman */
+.chairman {
+  padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */
