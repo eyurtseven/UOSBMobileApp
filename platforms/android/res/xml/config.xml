@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ionicframework.uosbmobileapp688988" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.uosb.mobile" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="Keyboard">
         <param name="android-package" value="com.ionic.keyboard.IonicKeyboard" />
@@ -15,6 +15,9 @@
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
     <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
@@ -33,12 +36,12 @@
     <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
     <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
     <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
-    <name>UOSBMobileApp</name>
+    <name>UOSB</name>
     <description>
-        An Ionic Framework and Cordova project.
+        Uşak Organize Sanayi Bölgesi Mobile Uygulaması
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="ben@emreyurtseven.com" href="http://www.emreyurtseven.com">
+        Emre Yurtseven - Metin Yılmaz
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -48,6 +51,6 @@
     <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="1500" />
     <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
 </widget>

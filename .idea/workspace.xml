@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f81234b4-8895-4910-a0ae-b847d119205f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/templates/companies.html" afterPath="$PROJECT_DIR$/platforms/ios/www/templates/companies.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/companies.html" afterPath="$PROJECT_DIR$/www/templates/companies.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/templates/menu.html" afterPath="$PROJECT_DIR$/platforms/ios/www/templates/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/css/style.css" afterPath="$PROJECT_DIR$/platforms/ios/www/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/unitsElectric.html" afterPath="$PROJECT_DIR$/www/templates/unitsElectric.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/unitsIt.html" afterPath="$PROJECT_DIR$/www/templates/unitsIt.html" />
+    <list default="true" id="f81234b4-8895-4910-a0ae-b847d119205f" name="Default" comment="sayfalar eklendi, logo değiştirildi.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-hdpi/icon.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-hdpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-ldpi/icon.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-ldpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-mdpi/icon.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-mdpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-xhdpi/icon.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-xhdpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-xxhdpi/icon.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-xxhdpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-xxxhdpi/icon.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-xxxhdpi/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-hdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-hdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-ldpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-ldpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-mdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-mdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-xhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-xhdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-xxhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-xxhdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-xxxhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-xxxhdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-hdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-hdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-ldpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-ldpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-mdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-mdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-xhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-xhdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-xxhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-xxhdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-xxxhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-xxxhdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/data/Company.json" afterPath="$PROJECT_DIR$/platforms/android/assets/www/data/Company.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/about.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/chairman.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/chairman.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/chairman.html" afterPath="$PROJECT_DIR$/www/templates/chairman.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/companies.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/companies.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/contact.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/controllers.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/directors.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/directors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/directors.html" afterPath="$PROJECT_DIR$/www/templates/directors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/goToCompany.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/goToCompany.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/menu.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/debug/merger.xml" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/news.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/values/strings.xml" afterPath="$PROJECT_DIR$/platforms/android/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/style.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UOSBMobileApp.iws" />
@@ -41,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unitsIt.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="unitsIt.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/unitsIt.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
+            <state vertical-scroll-proportion="0.0">
               <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
               <folding />
             </state>
@@ -54,7 +94,7 @@
       <file leaf-file-name="companies.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/companies.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
+            <state vertical-scroll-proportion="0.0">
               <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
               <folding />
             </state>
@@ -78,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unitsElectric.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="unitsElectric.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/unitsElectric.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25157234">
-              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            <state vertical-scroll-proportion="-13.125">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,7 +131,7 @@
       <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-90.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="144" column="23" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
               <folding />
             </state>
@@ -101,7 +141,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.888889">
+            <state vertical-scroll-proportion="0.0">
               <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
               <folding />
             </state>
@@ -203,6 +243,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,7 +378,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -474,13 +514,13 @@
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32439336" sideWeight="0.4918957" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32522407" sideWeight="0.48907682" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24806201" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32439336" sideWeight="0.5081043" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32522407" sideWeight="0.5109232" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33034572" sideWeight="0.49119097" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299363" sideWeight="0.49964663" order="11" side_tool="false" content_ui="tabs" />
@@ -779,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,23 +866,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-90.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="144" column="23" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/unitsIt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.888889">
+        <state vertical-scroll-proportion="0.0">
           <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
           <folding />
         </state>
@@ -851,7 +882,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/companies.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding />
         </state>
@@ -859,8 +890,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/unitsElectric.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25157234">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        <state vertical-scroll-proportion="-13.125">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/unitsIt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
           <folding />
         </state>
       </provider>
