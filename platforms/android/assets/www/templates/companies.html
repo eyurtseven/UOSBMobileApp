@@ -2,33 +2,13 @@
     <ion-content>
         <ion-list>
             <ion-item menu-close ng-repeat="company in companies">
-
-
-                <div class="item item-button-right">
-                    {{company.Company}}
-                    <!--<a href="#/app/goToCompany/{{company.Id}}">-->
-                        <a class="button button-positive" href="#/app/goToCompany/{{company.Id}}">
-                            <i class="icon ion-navigate"> Yol Tarifi</i>
-                        </a>
-                    <!--</a>-->
+                <div class="company">
+                    <ul><li><a href="#/app/goToCompany/{{company.Id}}">
+                        <i class="ion-android-pin"></i> {{company.Company}}
+                    </a></li>
+                    </ul>
                 </div>
-
             </ion-item>
-            <!--<div >
-
-                <div class="item item-button-right">
-                    Firma Adı
-                    <button class="button button-positive">
-                        <i class="icon ion-navigate"> Yol Tarifi</i>
-                    </button>
-                </div>
-                <div class="item item-button-right">
-                    Firma Adı
-                    <button class="button button-positive">
-                        <i class="icon ion-navigate"> Yol Tarifi</i>
-                    </button>
-                </div>
-            </div>-->
         </ion-list>
     </ion-content>
 </ion-view>

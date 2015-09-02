@@ -118,6 +118,33 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     }
                 }
             })
+            .state('app.units', {
+                url: '/units',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/units.html',
+                        controller: 'UnitsCtrl'
+                    }
+                }
+            })
+            .state('app.unitsElectric', {
+                url: '/unitsElectric',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/unitsElectric.html',
+                        controller: 'UnitsElectricCtrl'
+                    }
+                }
+            })
+            .state('app.unitsIt', {
+                url: '/unitsIt',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/unitsIt.html',
+                        controller: 'UnitsItCtrl'
+                    }
+                }
+            })
             .state('app.about', {
                 url: '/about',
                 views: {
